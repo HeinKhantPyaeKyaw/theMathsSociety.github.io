@@ -1,0 +1,2202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fcc6;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(56, 205, 224);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+nav img{
+    width: 130px;
+    cursor: pointer;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#menu-close{
+    display: none;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav .navigation ul li{
+    padding: 20px;
+    position: relative;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav .navigation ul li a:hover{
+    color: #e4591b;
+}
+nav .navigation ul li a i{
+    padding: 5px;
+}
+nav .navigation ul li p#hover{
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav .navigation ul li p#hover:hover{
+    color: #e4591b;
+}
+.sub-menu{
+    display: none;
+}
+nav .navigation ul li:hover .sub-menu{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgba( 17, 20, 104, 0.45);
+}
+nav .navigation ul li:hover .sub-menu ul{
+    display: block;
+    margin: 0;
+}
+
+nav .navigation ul li:hover .sub-menu ul li{
+    width: 110px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu ul li a{
+    font-size: 1px;
+    text-align: left;
+}
+/* .fa-angle-right{
+    float: right;
+} */
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 133px;
+    background: rgba( 17, 20, 104, 0.45);
+}
+
+/* Lessons */
+#lesson{
+    padding: 12vw 3vw 8vw 3vw;
+}
+.lesson-title{
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-shadow: red 0 0, cyan 0 0;
+    transition: text-shadow 200ms;
+
+}
+.lesson-title h1:hover{
+    text-shadow: rgb(252, 133, 242) -6px 0, rgb(129, 250, 250) 6px 0;
+}
+
+
+.lesson1 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson1 a{
+    padding: 10px 360px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson1 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson2{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson2 a{
+    /* text-decoration: none; */
+    padding: 10px 220px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson2 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson2 .a4{
+    padding-right: 350px;
+}
+.lesson3{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson3 a{
+    /* text-decoration: none; */
+    padding: 10px 180px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson3 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+    /* .lesson3 .a6{
+        padding-right: 355px;
+    } */
+.lesson4 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson4 a{
+    padding: 10px 303px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson4 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson5{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson5 a{
+    /* text-decoration: none; */
+    padding: 10px 385px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson5 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson5 .a10{
+    padding-right: 365px;
+}
+.lesson6{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson6 a{
+    /* text-decoration: none; */
+    padding: 10px 200px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson6 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson6 .a12{
+    padding-right: 365px;
+}
+.lesson7{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson7 a{
+    padding: 10px 375px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson7 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson8{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson8 a{
+    padding: 10px 350px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson8 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson8 .a16{
+    padding-right: 365px;
+}
+.lesson8-5{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson8-5 a{
+    padding: 10px 375px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson8-5 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson9{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson9 a{
+    padding: 10px 360px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson9 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson9 .a18{
+    padding-right: 365px;
+}
+.lesson10{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson10 a{
+    padding: 10px 295px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson10 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson10 .a20{
+    padding-right: 365px;
+}
+.lesson11 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+
+.lesson11 a{
+    padding: 10px 335px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+.lesson11 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson11 .a22{
+    padding-right: 365px;
+}
+.lesson11a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+
+.lesson11a a{
+    padding: 10px 300px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+.lesson11a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson12 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson12 a {
+    padding: 10px 340px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson12 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson12 .a24 {
+    padding-right: 365px;
+}
+.lesson12a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson12a a {
+    padding: 10px 240px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson12a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson13 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson13 a{
+    padding: 10px 290px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson13 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson13 .a26 {
+    padding-right: 365px;
+}
+.lesson14 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson14 a{
+    padding: 10px 280px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson14 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson14 .a28 {
+    padding-right: 365px;
+}
+.lesson15 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson15 a{
+    padding: 10px 240px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson15 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson15 .a30 {
+    padding-right: 365px;
+}
+.lesson15a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson15a a{
+    padding: 10px 278px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson15a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson16 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson16 a{
+    padding: 10px 300px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson16 a:hover{
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson16 .a32 {
+    padding-right: 365px;
+}
+.lesson17 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson17 a{
+    padding: 10px 150px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson17 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+
+.lesson18 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson18 a{
+    padding: 10px 255px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson18 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson19 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson19 a{
+    padding: 10px 385px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson19 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson19 .a35a {
+    padding-right: 365px;
+}
+
+.lesson20 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson20 a{
+    padding: 10px 200px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson20 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+
+.lesson21 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson21 a{
+    padding: 10px 350px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson21 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson22 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson22 a{
+    padding: 10px 400px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson22 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson23 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson23 a{
+    padding: 10px 330px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson23 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson24 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson24 a{
+    padding: 10px 240px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson24 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson24a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson24a a{
+    padding: 10px 345px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson24a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson25 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson25 a{
+    padding: 10px 140px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson25 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson26 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson26 a{
+    padding: 10px 140px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson26 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson27 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson27 a{
+    padding: 10px 410px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson27 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28 a{
+    padding: 10px 410px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28a a{
+    padding: 10px 380px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28b {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28b a{
+    padding: 10px 220px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28b a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28c {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28c a{
+    padding: 10px 290px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28c a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28d {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28d a{
+    padding: 10px 240px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28d a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28e {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28e a{
+    padding: 10px 260px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28e a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28e1 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28e1 a{
+    padding: 10px 380px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28e1 a:hover{
+    background: rgb(211, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28f {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28f a{
+    padding: 10px 300px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28f a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28g {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28g a{
+    padding: 10px 230px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28g a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28h {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28h a{
+    padding: 10px 260px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28h a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson28i {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson28i a{
+    padding: 10px 340px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson28i a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson29 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson29 a{
+    padding: 10px 315px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson29 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson29a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson29a a{
+    padding: 10px 380px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson29a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson29b {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson29b a{
+    padding: 10px 320px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson29b a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson29c {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson29c a{
+    padding: 10px 320px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson29c a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson30 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson30 a{
+    padding: 10px 350px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson30 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson31 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson31 a{
+    padding: 10px 225px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson31 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson31a {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson31a a{
+    padding: 10px 410px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson31a a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson31b{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson31b a{
+    padding: 10px 275px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson31b a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson31c{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson31c a{
+    padding: 10px 358px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson31c a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson31d{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson31d a{
+    padding: 10px 165px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson31d a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson31e{
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson31e a{
+    padding: 10px 360px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson31e a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson32 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson32 a{
+    padding: 10px 300px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson32 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson33 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson33 a{
+    padding: 10px 390px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson33 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+.lesson34 {
+    padding-left: 100px;
+    padding-top: 22px;
+}
+.lesson34 a{
+    padding: 10px 295px 10px 5px;
+    font-size: 1.2rem;
+    border: hidden;
+    color: black;
+    text-decoration: none;
+}
+.lesson34 a:hover {
+    background: rgb(221, 112, 112);
+    color: #fff;
+    border: inset;
+    border-radius: 10px;
+}
+/* Footer */
+
+footer{
+    padding: 100px 100px 20px 100px;;
+    background-color: #101C32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer .footer-col li a{
+    text-decoration: none;
+    color: #7b838a;
+}
+footer .footer-col li a:hover{
+    color: rgb(241, 240, 245);
+}
+footer form{
+    color: #7b838a;
+}
+footer .submit{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+footer .submit textarea{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 5%;
+
+}
+
+footer .submit button{
+    color: #fff;
+    background: #FDC93B;
+    align-items: center;
+}
+footer .submit button:hover {
+    color:#fff;
+    background: rgb(21, 21, 100); 
+    transition: 0.3s ease;
+}
+footer p{
+    color: #7b838a;
+}
+footer .footer-col-link li a{
+    text-decoration: none;
+    color: #7b838a;
+    font-size: 30px;
+}
+footer .footer-col-link li a:hover{
+    color: rgb(241, 240, 245);
+}
+
+/* Phone & Tablet */
+
+@media (max-width: 769px)  {
+    nav {
+        padding: 5px 20px;
+    }
+    #menu-btn{
+        display: initial;
+    }
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 120px; 
+        height: 100vh;
+        background: rgba( 17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style: none;
+        transition: 0.3s ease;
+    }
+    nav .navigation ul.active{
+        right: 0;
+
+    }
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+    nav .navigation ul li a{
+        color: #fff;
+    }
+    #lesson{
+        padding: 22vw 1vw 10vw 2vw;
+    }
+    .lesson-title{
+        text-align: center;
+        padding-bottom: 80px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        text-shadow: red 0 0, cyan 0 0;
+        transition: text-shadow 200ms;
+    
+    }
+    .lesson-title h1:hover{
+        text-shadow: yellow -6px 0, cyan 6px 0;
+    }
+    .lesson1 {
+        padding-left: 20px;
+    }
+    .lesson1 a{
+        /* text-decoration: none; */
+        padding: 10px 10px 10px 5px;
+        font-size: 0.7rem;
+    }
+    .lesson2{
+        padding-left: 20px;
+    }
+    .lesson2 a{
+        /* text-decoration: none; */
+        padding: 10px 10px 10px 5px;
+        font-size: 0.7rem;
+    }
+    .lesson2 .a4{
+        padding-right: 10px;
+    }
+    .lesson3{
+        padding-left: 20px;
+    }
+    .lesson3 a{
+        /* text-decoration: none; */
+        padding: 10px 10px 10px 5px;
+        font-size: 0.7rem;
+    }
+    .lesson4{
+        padding-left: 20px;
+    }
+    .lesson4 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson5{
+        padding-left: 20px;
+    }
+    .lesson5 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson6{
+        padding-left: 20px;
+    }
+    .lesson6 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson6 .a12{
+        padding: 5px;
+    }
+    .lesson7{
+        padding-left: 20px;
+    }
+    .lesson7 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson8{
+        padding-left: 20px;
+    }
+    .lesson8 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson8 .a16{
+        padding: 5px;
+    }
+    .lesson8-5{
+        padding-left: 20px;
+    }
+    .lesson8-5 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson9 {
+        padding-left: 20px;
+    }
+    .lesson9 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson9 .a18{
+        padding: 5px;
+    }
+    .lesson10 {
+        padding-left: 20px;
+    }
+    .lesson10 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson10 .a20{
+        padding: 5px;
+    }
+    .lesson11 {
+        padding-left: 20px;
+    }
+    .lesson11 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson11 .a22{
+        padding: 5px;
+    }
+    .lesson11a {
+        padding-left: 20px;
+    }
+    .lesson11a a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson12 {
+        padding-left: 20px;
+    }
+    .lesson12 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson12 .a24{
+        padding: 5px;
+    }
+    .lesson12a {
+        padding-left: 20px;
+    }
+    .lesson12a a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson13 {
+        padding-left: 20px;
+    }
+    .lesson13 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson13 .a26{
+        padding: 5px;
+    }
+    .lesson14 {
+        padding-left: 20px;
+    }
+    .lesson14 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson14 .a28{
+        padding: 5px;
+    }
+    .lesson15 {
+        padding-left: 20px;
+    }
+    .lesson15 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson15 .a30{
+        padding: 5px;
+    }
+    .lesson15a {
+        padding-left: 20px;
+    }
+    .lesson15a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson16 {
+        padding-left: 20px;
+    }
+    .lesson16 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson16 .a32{
+        padding: 5px;
+    }
+    .lesson17 {
+        padding-left: 20px;
+    }
+    .lesson17 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson17 .a34{
+        padding: 5px;
+    }
+    .lesson18 {
+        padding-left: 20px;
+    }
+    .lesson18 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson19 {
+        padding-left: 20px;
+    }
+    .lesson19 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson19 .a35a{
+        padding: 5px;
+    }
+    .lesson20 {
+        padding-left: 20px;
+    }
+    .lesson20 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson21 {
+        padding-left: 20px;
+    }
+    .lesson21 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson22 {
+        padding-left: 20px;
+    }
+    .lesson22 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson23 {
+        padding-left: 20px;
+    }
+    .lesson23 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson24 {
+        padding-left: 20px;
+    }
+    .lesson24 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson24a {
+        padding-left: 20px;
+    }
+    .lesson24a a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson25 {
+        padding-left: 20px;
+    }
+    .lesson25 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson26 {
+        padding-left: 20px;
+    }
+    .lesson26 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson27 {
+        padding-left: 20px;
+    }
+    .lesson27 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28 {
+        padding-left: 20px;
+    }
+    .lesson28 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28a {
+        padding-left: 20px;
+    }
+    .lesson28a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28b {
+        padding-left: 20px;
+    }
+    .lesson28b a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28c {
+        padding-left: 20px;
+    }
+    .lesson28c a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28d {
+        padding-left: 20px;
+    }
+    .lesson28d a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28e {
+        padding-left: 20px;
+    }
+    .lesson28e a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28e1 {
+        padding-left: 20px;
+    }
+    .lesson28e1 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28f {
+        padding-left: 20px;
+    }
+    .lesson28f a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28g {
+        padding-left: 20px;
+    }
+    .lesson28g a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28h {
+        padding-left: 20px;
+    }
+    .lesson28h a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28i {
+        padding-left: 20px;
+    }
+    .lesson28i a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29 {
+        padding-left: 20px;
+    }
+    .lesson29 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29a {
+        padding-left: 20px;
+    }
+    .lesson29a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29b {
+        padding-left: 20px;
+    }
+    .lesson29b a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29c {
+        padding-left: 20px;
+    }
+    .lesson29c a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson30 {
+        padding-left: 20px;
+    }
+    .lesson30 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31 {
+        padding-left: 20px;
+    }
+    .lesson31 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31a {
+        padding-left: 20px;
+    }
+    .lesson31a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31b {
+        padding-left: 20px;
+    }
+    .lesson31b a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31c {
+        padding-left: 20px;
+    }
+    .lesson31c a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31d {
+        padding-left: 20px;
+    }
+    .lesson31d a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31e {
+        padding-left: 20px;
+    }
+    .lesson31e a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson32 {
+        padding-left: 20px;
+    }
+    .lesson32 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson33 {
+        padding-left: 20px;
+    }
+    .lesson33 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson34 {
+        padding-left: 20px;
+    }
+    .lesson34 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .ml1 span{
+        font-size: 2rem;
+    }
+    #lesson{
+        padding: 22vw 1vw 10vw 2vw;
+    }
+    .lesson-title{
+        text-align: center;
+        padding-bottom: 80px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        text-shadow: red 0 0, cyan 0 0;
+        transition: text-shadow 200ms;
+    
+    }
+    .lesson-title h1:hover{
+        text-shadow: yellow -6px 0, cyan 6px 0;
+    }
+    .lesson1 {
+        padding-left: 20px;
+    }
+    .lesson1 a{
+        /* text-decoration: none; */
+        padding: 10px 10px 10px 5px;
+        font-size: 0.7rem;
+    }
+    .lesson2{
+        padding-left: 20px;
+    }
+    .lesson2 a{
+        /* text-decoration: none; */
+        padding: 10px 10px 10px 5px;
+        font-size: 0.7rem;
+    }
+    .lesson2 .a4{
+        padding-right: 10px;
+    }
+    .lesson3{
+        padding-left: 20px;
+    }
+    .lesson3 a{
+        /* text-decoration: none; */
+        padding: 10px 10px 10px 5px;
+        font-size: 0.7rem;
+    }
+    .lesson4{
+        padding-left: 20px;
+    }
+    .lesson4 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson5{
+        padding-left: 20px;
+    }
+    .lesson5 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson6{
+        padding-left: 20px;
+    }
+    .lesson6 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson6 .a12{
+        padding: 5px;
+    }
+    .lesson7{
+        padding-left: 20px;
+    }
+    .lesson7 a{
+        padding: 10px 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    .lesson8{
+        padding-left: 20px;
+    }
+    .lesson8 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson8 .a16{
+        padding: 5px;
+    }
+    .lesson8-5{
+        padding-left: 20px;
+    }
+    .lesson8-5 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson9 {
+        padding-left: 20px;
+    }
+    .lesson9 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson9 .a18{
+        padding: 5px;
+    }
+    .lesson10 {
+        padding-left: 20px;
+    }
+    .lesson10 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson10 .a20{
+        padding: 5px;
+    }
+    .lesson11 {
+        padding-left: 20px;
+    }
+    .lesson11 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson11 .a22{
+        padding: 5px;
+    }
+    .lesson11a {
+        padding-left: 20px;
+    }
+    .lesson11a a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson12 {
+        padding-left: 20px;
+    }
+    .lesson12 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson12 .a24{
+        padding: 5px;
+    }
+    .lesson12a {
+        padding-left: 20px;
+    }
+    .lesson12a a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson13 {
+        padding-left: 20px;
+    }
+    .lesson13 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson13 .a26{
+        padding: 5px;
+    }
+    .lesson14 {
+        padding-left: 20px;
+    }
+    .lesson14 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson14 .a28{
+        padding: 5px;
+    }
+    .lesson15 {
+        padding-left: 20px;
+    }
+    .lesson15 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson15 .a30{
+        padding: 5px;
+    }
+    .lesson15a {
+        padding-left: 20px;
+    }
+    .lesson15a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson16 {
+        padding-left: 20px;
+    }
+    .lesson16 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson16 .a32{
+        padding: 5px;
+    }
+    .lesson17 {
+        padding-left: 20px;
+    }
+    .lesson17 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson17 .a34{
+        padding: 5px;
+    }
+    .lesson18 {
+        padding-left: 20px;
+    }
+    .lesson18 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson19 {
+        padding-left: 20px;
+    }
+    .lesson19 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson19 .a35a{
+        padding: 5px;
+    }
+    .lesson20 {
+        padding-left: 20px;
+    }
+    .lesson20 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson21 {
+        padding-left: 20px;
+    }
+    .lesson21 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson22 {
+        padding-left: 20px;
+    }
+    .lesson22 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson23 {
+        padding-left: 20px;
+    }
+    .lesson23 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson24 {
+        padding-left: 20px;
+    }
+    .lesson24 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson24a {
+        padding-left: 20px;
+    }
+    .lesson24a a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson25 {
+        padding-left: 20px;
+    }
+    .lesson25 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson26 {
+        padding-left: 20px;
+    }
+    .lesson26 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson27 {
+        padding-left: 20px;
+    }
+    .lesson27 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28 {
+        padding-left: 20px;
+    }
+    .lesson28 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28a {
+        padding-left: 20px;
+    }
+    .lesson28a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28b {
+        padding-left: 20px;
+    }
+    .lesson28b a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28c {
+        padding-left: 20px;
+    }
+    .lesson28c a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28d {
+        padding-left: 20px;
+    }
+    .lesson28d a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28e {
+        padding-left: 20px;
+    }
+    .lesson28e a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28e1 {
+        padding-left: 20px;
+    }
+    .lesson28e1 a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28f {
+        padding-left: 20px;
+    }
+    .lesson28f a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28g {
+        padding-left: 20px;
+    }
+    .lesson28g a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28h {
+        padding-left: 20px;
+    }
+    .lesson28h a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson28i {
+        padding-left: 20px;
+    }
+    .lesson28i a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29 {
+        padding-left: 20px;
+    }
+    .lesson29 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29a {
+        padding-left: 20px;
+    }
+    .lesson29a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29b {
+        padding-left: 20px;
+    }
+    .lesson29b a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson29c {
+        padding-left: 20px;
+    }
+    .lesson29c a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson30 {
+        padding-left: 20px;
+    }
+    .lesson30 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31 {
+        padding-left: 20px;
+    }
+    .lesson31 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31a {
+        padding-left: 20px;
+    }
+    .lesson31a a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31b {
+        padding-left: 20px;
+    }
+    .leeson31b a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31c {
+        padding-left: 20px;
+    }
+    .lesson31c a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31d {
+        padding-left: 20px;
+    }
+    .lesson31d a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson31e{
+        padding-left: 20px;
+    }
+    .lesson31e a{
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson32 {
+        padding-left: 20px;
+    }
+    .lesson32 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson33 {
+        padding-left: 20px;
+    }
+    .lesson33 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .lesson34 {
+        padding-left: 20px;
+    }
+    .lesson34 a {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+}

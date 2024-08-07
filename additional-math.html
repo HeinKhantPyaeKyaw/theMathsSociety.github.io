@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Mathematics</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="addi-math.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>var ml = { timelines: {}};</script>
+</head>
+<body>
+         <!-- Navigation -->
+<nav>
+<a href="index.html"><img src="images/tmsfp.png" alt=""></a>
+<div class="navigation">
+    <ul>
+        <i id="menu-close" class="fas fa-times"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><p id="hover"> About <i class="fas fa-caret-down"></i></p>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <!-- <li class="hover-me"><a href="schedules.html">Schedules</a> -->
+                        <!-- <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="december.html">Timetable</a></li>
+                                <li><a href="real-calen.html">Calendar</a></li>
+                        </ul>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="teachers.html">Staffs</a></li>
+        <li><a href="lesson.html">Lessons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <img id="menu-btn" src="images/hamburger.png" alt="">
+</div>
+</nav>
+
+    <!-- Lessons -->
+
+<section id="lesson">
+    <div class="lesson-title">
+        <h1>Additional Mathematics</h1>
+    </div>
+    <div class="lesson1">
+        <a class="a1" href="pastpaper2019.html">-> Past Paper (2019)</a>
+    </div>
+    <div class="lesson2">
+        <a class="a2" href="pastpaper2020.html">-> Past Paper (2020)</a>
+    </div>
+    <div class="lesson3">
+        <a href="pastpaper2022.html" class="a3">-> Past Paper (2022)</a>
+    </div>
+    <div class="lesson4">
+        <a href="testpapers.html" class="a4">-> Test Papers</a>
+    </div>
+</section>
+
+     <!-- Footer -->
+
+<footer>
+    <div class="footer-col">
+        <h3>Userful Links</h3>
+        <li><a href="overview.html">About</a></li>
+        <li><a href="lesson.html">Lessons</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+
+    <div class="footer-col">
+        <h3>Address</h3>
+        <p>Yankin, Yangon, <br>Myanmar <br>Ph: (+95-9) 757 264 710 <br>Email: themathssociety@gmail.com</p>
+    </div>
+
+    <div class="footer-col-link">
+        <h3>Socials</h3>
+        <li><a href="https://www.facebook.com/profile.php?id=100076102009281"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/@themathssociety"><i class="fab fa-youtube"></i></a></li>
+    </div>
+</footer>
+
+<script>
+    $('#menu-btn').click(function(){
+       $('nav .navigation ul').addClass('active')
+   });
+
+   $('#menu-close').click(function(){
+       $('nav .navigation ul').removeClass('active')
+   });
+</script>
+
+
+</body>
+</html>

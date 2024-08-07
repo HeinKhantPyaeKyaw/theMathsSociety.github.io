@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>var ml = { timelines: {}};</script>
+
+
+    <title>Contact/The Maths Society</title>
+</head>
+<body>
+
+        <!-- Navigation -->
+<nav>
+    <a href="index.html"><img src="images/tmsfp.png" alt=""></a>
+    <div class="navigation">
+        <ul>
+            <i id="menu-close" class="fas fa-times"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><p id="hover"> About <i class="fas fa-caret-down"></i></p>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <!-- <li class="hover-me"><a href="schedules.html">Schedules</a> -->
+                            <!-- <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="december.html">Timetable</a></li>
+                                    <li><a href="real-calen.html">Calendar</a></li>
+                            </ul>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="teachers.html">Staffs</a></li>
+            <li><a href="lesson.html">Lessons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="images/hamburger.png" alt="">
+    </div>
+</nav>
+    <!-- Contact Us -->
+    <div class="contact">
+        <form action="https://formsubmit.co/themathssociety@gmail.com" method="POST">
+            <h1>REGISTER HERE NOW!</h1><hr><br>
+            <h2><i>Registeration Form</i></h2><br>
+            <div class="name-info">
+                Name: 
+                <strong class="formRequired">(*)</strong> <br><br>
+                <input type="text" value-size="20" name="Name" id="n"> 
+                <br><br>
+            </div>
+            <div class="email-info">
+                Email:
+                <strong class="formRequired">(*)</strong> <br><br>
+                <input type="text" value-size="20" name="Email" id="e"> 
+                <br><br>
+            </div>
+            <div class="message-info">
+                Phone Number:
+                <strong class="formRequired">(*)</strong> <br><br>
+                <input type="text" value-size="20" name="Phone-Number" id="g">
+                <br><br>
+            </div>
+            <div class="level">
+                <select name="Level" id="format">
+                    <option selected disabled>Choose Your Level</option>
+                    <option value="Cie">CIE, IGCSE</option>
+                    <option value="Year9">Year 9</option>
+                    <option value="Year8">Year 8</option>
+                    <option value="Year7">Year 7</option>
+                    <option value="Year 6 and Below">Year 6 and Below</option>
+                </select>
+            </div>
+            <div class="select1">
+                <select name="Subject" id="format">
+                    <option selected disabled>Choose Your Subject</option>
+                    <option value="Additional Mathematics">Additional Mathematics (0606)</option>
+                    <option value="Extended Mathematics">Extended Mathematics (0580)</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="BothA&E">Both Additional and Extended Maths</option>
+                </select>
+                <br><br><br><br><br><br>
+
+            </div>
+            <div class="btn-submit">
+                <button type="submit">Send</button> <br><br>
+            </div>
+
+            <div class="sub-headings">
+                <h3 style="padding: 20px 0;">Contact Address</h3>
+                <p><i class="fas fa-home"></i>Yankin, Yangon, Myanmar</p><br>
+                <p><i class="fas fa-phone"></i>(+95-9) 757 264 710</p> <br>
+                <p><i class="fas fa-envelope"></i>themathssociety@gmail.com</p>
+            </div>
+    </form>
+    </div>
+    
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-col">
+            <h3>Userful Links</h3>
+            <li><a href="overview.html">About</a></li>
+            <li><a href="lesson.html">Lessons</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        
+        <div class="footer-col">
+            <h3>Address</h3>
+            <p>Yankin, Yangon, <br>Myanmar <br>Ph: (+95-9) 757 264 710 <br>Email: themathssociety@gmail.com</p>
+        </div>
+        <div class="footer-col-link">
+            <h3>Socials</h3>
+            <li><a href="https://www.facebook.com/profile.php?id=100076102009281"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/@themathssociety"><i class="fab fa-youtube"></i></a></li>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+           $('nav .navigation ul').addClass('active')
+       });
+    
+       $('#menu-close').click(function(){
+           $('nav .navigation ul').removeClass('active')
+       });
+    </script>
+    
+    
+</body>
+</html>
